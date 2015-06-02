@@ -1,0 +1,94 @@
+********************************************************************************
+PACKAGE-LOG: 2014-10-01 21:22:36
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	0.5.8
+WORDPRESS:	3.9.2
+PHP INFO:	5.5.16 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 5000M (40M default) 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   PHP
+MYSQLDUMP:    Not Supported
+MYSQLTIMEOUT: 5000 
+TABLES: total:27 | filtered:0 | create:27 
+FILTERED: [] 
+trio_commentmeta (0) 
+trio_comments (0) 
+trio_duplicator_packages (2) 
+trio_ecpt_meta_box_fields (4) 
+trio_ecpt_meta_boxes (1) 
+trio_ecpt_post_types (2) 
+trio_ecpt_taxonomies (1) 
+trio_links (0) 
+trio_lockdowns (13) 
+trio_login_fails (336) 
+trio_options (312) 
+trio_postmeta (225) 
+trio_posts (412) 
+trio_rg_form (3) 
+trio_rg_form_meta (3) 
+trio_rg_form_view (9070) 
+trio_rg_lead (2351) 
+trio_rg_lead_detail (45551) 
+trio_rg_lead_detail_long (11) 
+trio_rg_lead_meta (0) 
+trio_rg_lead_notes (0) 
+trio_term_relationships (12) 
+trio_term_taxonomy (4) 
+trio_terms (4) 
+trio_usermeta (118) 
+trio_users (5) 
+trio_w3tc_cdn_queue (0) 
+SQL CREATED: 20141001_triotripleplay_542c70719f1eb6113141001212153_database.sql 
+SQL FILE SIZE: 7.32MB 
+SQL RUNTIME: 5.99 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /var/www/html/triotripleplay_com/wp 
+ARCHIVE FILE: 20141001_triotripleplay_542c70719f1eb6113141001212153_archive.zip 
+FILTERS: *OFF* 
+DIRS:  not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	16.12MB 
+STATS:	Dirs 115 | Files 1,136 | Links 0 
+SQL ADDED: 20141001_triotripleplay_542c70719f1eb6113141001212153_database.sql 
+WARNING: Unable to zip directory: '/var/www/html/triotripleplay_com/wp' 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 1251
+    [filename] => /var/www/html/triotripleplay_com/wp/wp-snapshots/tmp/20141001_triotripleplay_542c70719f1eb6113141001212153_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 6.7MB 
+ARCHIVE RUNTIME: 2.03 sec. 
+
+******************************************************************************** 
+INSTALLER: 
+******************************************************************************** 
+INSTALLER FILE: Build Start 
+INSTALLER FILE: Build Finished 
+INSTALLER FILE: Preping for use 
+INSTALLER FILE: Template parsed with new data 
+INSTALLER FILE: Complete [/var/www/html/triotripleplay_com/wp/wp-snapshots/tmp/20141001_triotripleplay_542c70719f1eb6113141001212153_installer.php] 
+INSTALLER FILE: Added to archive 
+
+********************************************************************************
+RECORD ID:[2]
+FILE SIZE: Archive:6.7MB | SQL:7.32MB | Installer:414.5KB
+TOTAL PROCESS RUNTIME: 8.15 sec.
+DONE PROCESSING => 20141001_triotripleplay 2014-10-01 21:22:44
+********************************************************************************
+ 

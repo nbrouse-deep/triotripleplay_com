@@ -1,0 +1,976 @@
+/*
+Theme Name:     Trio Triple Play
+Theme URI:      http: //triotripleplay.com
+Description:    Child theme of twentyeleven
+Author:         Stephen Parke @ deepgroup
+Author URI:     http: //deepgroup.com
+Template:       twentyeleven
+Version:        2.0.0
+*/
+
+
+@import url("../twentyeleven/style.css");
+
+
+/* Note: remove this when archive functionality is implemented */
+.page-id-16 .cta-dot {
+	display: none!important;
+}
+
+.postid-292 .recipe-image {
+	margin-top: 2.4em!important;
+}
+
+p {
+	font-family: Helvetica, "Helvetica Neue", Arial, Geneva, sans-serif;
+}
+
+
+body {
+	padding: 0;
+	background: white;
+}
+
+#main a {
+	color: #860f1c;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#main a:hover, #main a:active {
+	color: #631003;
+}
+
+#branding {
+	overflow: auto;
+	padding: 0;
+	border: 0;
+}
+
+.site-title {
+	float: right;
+	width: 220px;
+	height: 132px;
+	padding: 0;
+	margin: 0;
+	text-indent: -999em;
+	background: url('images/trio-logo.png') no-repeat;
+}
+
+#branding nav {
+	float: left;
+	width: 75%;
+	margin-top: -7em;
+	background: none;
+	box-shadow: none;
+}
+
+#branding nav a {
+	font-size: 1.2em;
+	color: #333;
+	border-left: 1px solid #8a1819;
+}
+
+#branding .current-menu-item a {
+	font-weight: normal;
+	color: #570f02;
+}
+
+#branding nav a:hover {
+	color: #570f02;
+	background: none;
+}
+
+#branding nav > div {
+	margin: 0;
+	overflow: auto;
+}
+
+#branding .menu {
+	overflow: auto;
+}
+
+#main {
+	position: relative;
+	overflow: hidden;
+	top: -40px;
+}
+
+#primary #content {
+	margin: 0;
+	padding: 0 1em;
+}
+
+#content .entry-header, #content .entry-content {
+	width: 100%;
+	margin: 0;
+}
+
+aside {
+	width: 240px;
+	margin: 0 3em 0 0;
+	float: left;
+	font-size: .8em;
+	line-height: 1.8em;
+
+	background: -moz-linear-gradient(top,  rgba(244,232,232,1) 0%, rgba(244,232,232,1) 15%, rgba(244,232,232,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,232,232,1)), color-stop(15%,rgba(244,232,232,1)), color-stop(100%,rgba(244,232,232,0)));
+	background: -webkit-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 100%);
+	background: -o-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 100%);
+	background: linear-gradient(to bottom,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8e8', endColorstr='#00f4e8e8',GradientType=0 );
+	padding: 2em;
+}
+
+aside.fade-short {
+	background: -moz-linear-gradient(top,  rgba(244,232,232,1) 0%, rgba(244,232,232,1) 15%, rgba(244,232,232,0) 42%, rgba(244,232,232,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(244,232,232,1)), color-stop(15%,rgba(244,232,232,1)), color-stop(42%,rgba(244,232,232,0)), color-stop(100%,rgba(244,232,232,0)));
+	background: -webkit-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 42%,rgba(244,232,232,0) 100%);
+	background: -o-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 42%,rgba(244,232,232,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 42%,rgba(244,232,232,0) 100%);
+	background: linear-gradient(to bottom,  rgba(244,232,232,1) 0%,rgba(244,232,232,1) 15%,rgba(244,232,232,0) 42%,rgba(244,232,232,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4e8e8', endColorstr='#00f4e8e8',GradientType=0 );
+}
+
+.page-id-27 .entry-content > div {
+	width: 500px;
+}
+
+.page-id-27 .entry-content h1 {
+	color: #9ea769!important;
+}
+
+.page-id-27 h1 strong {
+	color: #697818;
+}
+
+.page-id-10 .entry-content p {
+	margin-right: 30em;
+}
+
+.page-id-10 .offer-details {
+	display: block;
+	height: inherit;
+	padding: 2em 0;
+}
+
+.offer-details img {
+	margin-top: -2em!important;
+	margin-right: 2em!important;
+}
+
+.new-product-buttons {
+	overflow: auto;
+}
+
+.new-product-buttons div {
+	width: 50%;
+	float: left;
+}
+
+.new-product-buttons a {
+	font-size: 1.2em!important;
+}
+
+.new-products {
+	margin-top: 2em;
+}
+
+.new-products > div {
+	width: 150px;
+	margin-right: .8em;
+	float: left;
+	font-size: .8em;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+#foodservice-rewards-program ol li {
+	margin-bottom: 2em;
+}
+
+#foodservice-rewards-program img {
+	margin-left: 2em!important;
+}
+
+#rewards-intro {
+	border: none!important;
+}
+
+#rewards-intro img {
+	margin: 3.5em 0 0 0!important;
+}
+
+.rewards-photos {
+	margin: 340px 0 0 0!important;
+}
+
+.rewards-callout {
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#rewards-sweepstakes img {
+	margin-bottom: 4em!important;
+	margin-right: 1.2em!important;
+}
+
+#ideas-header p {
+	width: 42%;
+}
+
+.page-id-9 #trioMainContent {
+	margin-top: 0!important;
+}
+
+aside img {
+	display: block;
+	margin: 0 auto!important;
+}
+
+img {
+	margin: 0!important;
+	padding: 0!important;
+	border: none!important;
+}
+
+#primary {
+	position: relative;
+	color: #5a1300;
+	font-size: 1em;
+	line-height: 1.8em!important;
+	z-index: 50!important;
+}
+
+.home #content img.alignleft {
+	margin: -1.9em 1em 6em 0!important;
+}
+
+h2 {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-size: 2.2em;
+	font-weight: 700;
+	color: #5b1302!important;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+h2 em {
+	color: #8c0b05;
+	font-style: normal;
+}
+
+h3 {
+	height: 1.2em;
+	line-height: 1em!important;
+	font-size: .9em!important;
+	font-weight: bold;
+}
+
+.page-id-9 #trioMainContent h2 {
+	font-size: 2em;
+}
+
+.page-id-9 #trioMainContent > section {
+	padding-top: 1em;
+	border-top: 1px solid #571002;
+}
+
+footer address {
+	margin-top: -1em;
+	line-height: 1.3em;
+	font-style: normal;
+}
+
+address span {
+	display: block;
+	height: 70px;
+	background: url('images/np-logo.png') no-repeat left top;
+	text-indent: -999em;
+}
+
+.legal {
+	margin: 2.8em 0 0 0;
+	font-size: .8em;
+	clear: both;
+}
+
+
+.entry-content h1 {
+text-transform: uppercase;
+color: #5b1302!important;
+padding-right: 580px;
+font: normal 700 3.2em/40px "futura-pt",sans-serif;
+letter-spacing: -2px;
+}
+
+.recipes h1 {
+	margin-bottom: .4em;
+}
+
+#content.recipes h2 {
+	padding-right: 4.2em;
+}
+
+#recipe-content .entry-content {
+	position: relative;
+	z-index: 50;
+}
+
+#recipe-content table {
+	padding: 0;
+	border-spacing: 0;
+}
+
+#recipe-list h3 {
+font-family: "futura-pt",sans-serif;
+font-style: normal;
+font-size: 1.2em!important;
+font-weight: 700;
+color: #5b1302!important;
+line-height: 1em;
+text-transform: uppercase;
+}
+
+.recipe-image {
+	width: 500px;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	z-index: 10;
+}
+
+#recipe-list ul {
+	list-style: none;
+	margin: 0;
+}
+
+#recipe-list a {
+	text-decoration: none;
+}
+
+.page-background-image {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	top: 0;
+}
+
+.page-id-287 .page-background-image {
+	display: none;
+}
+
+/*TEMP*/
+.postid-292 .page-background-image, .postid-282 .page-background-image {
+	display: none;
+}
+
+
+#products {
+	clear: both;
+}
+
+#products h3 {
+	text-indent: 2em;
+	margin-bottom: .8em;
+}
+
+#products div {
+	float: left;
+	
+}
+
+#products ul {
+	margin: 0 0 2em 0;
+	list-style: none;
+	overflow: auto;
+}
+
+#products ul > li {
+	width: 160px;
+	float: left;
+	text-align: center;
+}
+
+#products #gravies {
+	width: 100%;
+}
+
+.products-mobile {
+	display: none;
+}
+
+.products-mobile h4 {
+	margin-bottom: .6em;
+	font-weight: bold;
+}
+
+.products-mobile ul {
+	list-style: none;
+	margin-left: 0;
+}
+
+.products-mobile li {
+	padding: .4em 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.products-mobile li:last-child {
+	border: none;
+}
+
+.products-mobile a {
+	text-decoration: none!important;
+}
+
+
+
+
+
+.gform_wrapper .gform_button {
+width: 100%;
+height: 60px;
+background: #581003;
+font: 700 1.5em/.9em "futura-pt",sans-serif!important;
+text-transform: uppercase;
+text-align: center;
+color: #fff!important;
+text-decoration: none;
+vertical-align: middle;
+padding: 0 1.2em;
+border: 0!important;
+}
+
+.gform_body input {
+	font-size: 14px!important;
+}
+
+.gform_wrapper .gform_button:hover {
+	background: #83021e;
+}
+
+span.cta-dot {
+	display: block;
+	margin: 1em auto;
+}
+
+	span.dot-large {
+		width: 100%;
+		height: 60px;
+
+		background: #581003;
+
+	}
+	
+	span.dot-large a {
+		display: table-cell;
+		width: 500px;
+		height: inherit;
+		font: 700 1.5em/.9em "futura-pt",sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff!important;
+		text-decoration: none!important;
+		vertical-align: middle;
+	}
+	
+	span.dot-large a:hover {
+		background: #860f1c;
+		color: #fff!important;
+	}
+
+#trioMainContent {
+	width: 646px;
+	float: left;
+	margin-top: 12em;
+}
+
+#recipe-content {
+	width: 590px;
+	float: left;
+}
+
+#recipe-content span {
+	font-weight: bold;
+}
+
+#recipe-list {
+	width: 380px;
+	margin-top: 24em;
+	float: left;
+}
+
+table {
+	width: 90%!important;
+	margin: 1em 0 1em 0!important;
+	border: none!important;
+}
+
+table * {
+	color: #5a1300!important;
+	font-size: 14px;
+	background: none!important;
+}
+
+table tr > td:first-child {
+	width: 42px;
+}
+
+.spotlight {
+	margin-top: 13em;
+	line-height: 1.8em;
+}
+
+footer {
+	background: #eee;
+	margin-top: 3em;
+	padding: 1.5em 0;
+	overflow: auto;
+}
+
+.footer-wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+footer address {
+	width: 40%;
+	float: left;
+}
+
+footer #contact-us {
+	width: 60%;
+	float: right;
+}
+
+
+
+
+
+
+ol.steps {
+    counter-reset:li; /* Initiate a counter */
+    margin-left: 0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+	margin-bottom: 40px;
+}
+.steps > li {
+    position:relative; /* Create a positioning context */
+    margin: 0 0 2em 6em; /* Give each list item a left margin to make room for the numbers */
+    list-style:none; /* Disable the normal item numbering */
+}
+.steps > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+	left:-2em;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    
+    color:#fff;
+    background: url('images/ol-dot.png') no-repeat;
+	text-align: center;
+	font: bold 2.6em/156% "Times New Roman", Times, serif;
+	width: 60px;
+	height: 60px;
+	text-indent: 2px;
+}
+.steps li ol,
+.steps li ul {margin-top:6px;}
+.steps ol ol li:last-child {margin-bottom:0;}
+
+.steps h2 {
+	margin: 0 0 .3em 0;
+	font-weight: 500;
+	font-size: 1.6em;
+}
+
+footer .menu {
+	list-style-type: none!important;
+	margin: 0 0 3em 0;
+	overflow: hidden;
+}
+
+footer .menu li {
+	float: left;
+}
+
+footer .menu a {
+	padding: .4em 1em;
+	color: #860f1c;
+}
+
+.ie7 #branding nav {
+	margin-top: 0!important;
+}
+
+.ie7 #trioMainContent {
+	width: 600px!important;
+	float: left!important;
+}
+
+#header-mobile {
+	display: none;
+}
+
+
+@media all and (max-width: 768px) {
+
+#page {
+	margin: 0!important;
+	padding-top: 2em!important;
+}
+
+#branding {
+	display: none;
+}
+
+#header-mobile {
+	display: block;
+	position: relative;
+	overflow: auto;
+	z-index: 80;
+}
+
+#header-mobile .menu-icon{
+	display: block;
+	width: 60px;
+	background: url('images/mobile-menu-icon.png') no-repeat;
+	top: 8px;
+	position: absolute;
+	padding-top: 64px;
+	text-align: center;
+	font-family: "futura-pt",sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #5b1302;
+	line-height: 1em;
+	letter-spacing: -1px;
+}
+
+.page-id-9 .entry-content {
+	margin: 0!important;
+}
+
+.entry-content p {
+	margin-right: 0!important;
+}
+
+#ideas-header p {
+	width: 100%;
+}
+
+.page-id-10 .offer-details img{
+	float: left;
+	margin: -2.4em 2em 0 0!important;
+}
+
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	
+	body > * {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.entry-content p {
+		font-size: .9em;
+	}
+
+	#content {
+		font-size: 1.3em!important;
+		padding: 0!important;
+	}
+
+	.entry-content {
+		margin-top: 6.5em!important;
+	}
+
+	.page-background-image {
+		width: 80%;
+		height: auto;
+		top: 40px;
+		right: 10%;
+	}
+
+	.recipe-image {
+		width: 80%;
+		height: auto;
+		top: 10px;
+		right: 10%;
+	}
+
+	.entry-content h1 {
+		padding: 0;
+		font-size: 2em;
+	}
+	
+	.entry-content h2 {
+		font-size: 1.4em;
+	}
+
+	#content.recipes {
+		width: 100%!important;
+		overflow: auto!important;
+	}
+
+	#content.recipes .entry-content h2 {
+		padding-right: 4em!important;
+	}
+	
+	#content.recipes article {
+		width: 100%;
+	}
+	
+	#recipe-list {
+		width: 100%;
+		margin: 0;
+	}
+
+	.page-id-27 .entry-content > div {
+		width: 100%;
+	}
+
+	.new-product-buttons {
+		clear: both!important;
+	}
+	
+	.new-product-buttons > * {
+		display: block;
+		float: none!important;
+		margin: 0 auto;
+	}
+
+	.new-products {
+		clear: both!important;
+	}
+	
+	.new-products > * {
+		display: block;
+		float: none!important;
+		margin: 0 auto 2em auto!important;
+	}
+
+	#products > ul > li {
+		margin-bottom: 1.4em;
+		line-height: 110%;
+	}
+
+
+	aside {
+		position: relative;
+		width: auto!important;
+		margin: 0!important;
+	}
+
+	aside h3 {
+		margin-bottom: 1.2em;
+	}
+
+	.steps li:before {
+		font-size: 2.3em;
+	}
+
+	#trioMainContent {
+		width: 100%;
+		margin: 2em 0 0 0!important;
+	}
+
+	.home #content img.alignleft {
+		margin: 0 auto!important;
+	}
+
+	#rewards-sweepstakes img {
+		margin: 0 auto 1em!important;
+	}
+
+	.footer-wrap {
+		width: inherit;
+		padding: 2em 1em;
+	}
+
+	footer address {
+		width: 100%;
+		float: none!important;
+		clear: both!important;
+		text-align: center;
+	}
+
+	footer address h2 {
+		background-position: center;
+	}
+
+	#contact-us {
+		width: 100%!important;
+		float: none!important;
+		clear: both!important;
+	}
+
+	.gform_wrapper .gform_button {
+		display: block;
+		margin: 0 auto!important;
+	}
+
+	.rewards-photos {
+		display: none!important;
+	}
+
+	footer .menu {
+		list-style-type: none!important;
+		margin: 0 0 3em 0;
+		overflow: hidden;
+	}
+	
+	footer .menu li {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	
+	footer .menu li:first-child a {
+		border-top: none!important;
+	}
+	
+	footer .menu a {
+		display: block;
+		border-top: 1px solid #ddd;
+	}
+
+	.steps > li {
+		margin: 0 0 3em 0!important;
+	}
+	
+	.steps > li:before {
+	    content:counter(li); /* Use the counter as content */
+	    counter-increment:li; /* Increment the counter by 1 */
+	    /* Position and style the number */
+	    position: absolute;
+	    top: -70px;
+		left:0;
+	    -moz-box-sizing:border-box;
+	    -webkit-box-sizing:border-box;
+	    box-sizing:border-box;
+	    
+	    color:#fff;
+	    background: url('images/ol-dot.png') no-repeat;
+		text-align: center;
+		width: 60px;
+		height: 60px;
+		text-indent: 2px;
+	}
+	
+	.steps h2 {
+		margin-top: 2.8em;
+	}
+	
+	.page-id-27 .entry-content h1 {
+		margin-top: 1em;
+	}
+
+	
+
+	.products-mobile {
+		display: block!important;
+	}
+
+	#post-8 table {
+		display: none!important;
+	}
+
+}
+
+#post-8 .entry-content table h3 {
+	margin: 2.5em 0 .6em 2em;
+	text-align: left;
+}
+
+#post-8 .entry-content table tbody tr td {
+	width: 160px;
+	padding: 0!important;
+	text-align: center;
+	line-height: 1.4em;
+	border: none;
+}
+
+
+.disclaimer {
+
+	clear: both;
+
+	font-size: .7em;
+
+	font-style: italic;
+	margin: 2em 0 0;
+}
+
+
+
+
+
+
+/* v3 */
+.ie7 span.cta-dot {
+	display: block!important;
+	height: 140px!important;
+	width: 140px!important;
+	height: 140px!important;
+	background: none!important;
+}
+
+.ie7 span.cta-dot a {
+	display: block!important;
+	height: 40px!important;
+	padding: 50px 20px!important;
+}
+
+.ie7 span.dot-large a:hover {
+	background-position: -140px 0!important;
+	color: #fff!important;
+}
+
+.ie7 .new-products img {
+	float: left!important;
+	clear: both!important;
+	margin: 0 auto 6px auto!important;
+	padding: 0 10px!important;
+}
+
+.ie7 ol.steps > li {
+	position: relative!important;
+	margin-left: 0!important;
+	padding-left: 90px!important;
+}
+
+ol.steps > li .ol-fallback {
+	display: none!important;
+}
+
+.ie7 ol.steps > li .ol-fallback {
+	display: block!important;
+	position: absolute;
+	top: -30px!important;
+	left: 0!important;
+	margin: 0!important;
+}
+
+.ie7 #foodservice-rewards-program ol.steps > li .ol-fallback {
+	top: 20px!important;
+	left: 0!important;
+	margin: 0!important;
+}
+
+.ie7 .page-id-16 ol.steps > li .ol-fallback {
+	display: block!important;
+	position: absolute;
+	top: 60px!important;
+	left: 0!important;
+	margin: 0!important;
+}
