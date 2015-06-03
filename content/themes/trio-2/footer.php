@@ -17,13 +17,14 @@
 <footer id="global-footer" role="contentinfo">
 	<div class="footer-wrap">
 		<?php wp_nav_menu( array( 'theme_location' => 'primary', 'class' => 'footer-nav' ) ); ?>
-		<address>
+        <div style="width:40%;float:left;">
+		<address style="float:none;width:100%;">
 			<span><a href="http://nestleprofessional.com" style="display: block; width: inherit; height: inherit;">Nestl&eacute; Professional&trade;</a></span>
 			P.O. Box 457<br />Rogers, MN 55374-1618<br />1-800-288-8682
-		</address>
-        <p><h3><span style="font-style:italic:">Trio</span> NOW HAS PRODUCTS ON AMAZON</h3></p>
-        <p><h3><a href="http://www.amazon.com/Trio/pages/default" target="_blank">Order from Amazon</a></h3></p>
-		<div id="contact-us">
+        </address>
+        <h3><span style="font-style:italic;">Trio</span> NOW HAS PRODUCTS ON AMAZON</h3>
+        <p><a href="http://www.amazon.com/Trio/pages/default" target="_blank">Order from Amazon</a></p></div>
+        <div id="contact-us">
 			<h2>Contact Us</h2>
 			<?php gravity_form(9, false, false, false, '', false, 900); ?>
 		</div>
