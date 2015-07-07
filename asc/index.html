@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Join the Evolution</title>
+    
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/sliderstyle.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
+    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 1200, $Opacity: 2 }
+            ];
+
+            var options = {
+                $AutoPlay: true,                          //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                        //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled)
+                $AutoPlayInterval: 9000,                  //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing
+                $PauseOnHover: 1,                         //[Optional] pause when mouse over auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			  //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                      //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                       //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                      //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					      //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                        //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1)
+                $ParkingPosition: 0,                      //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                         //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                      //[Optional] Orientation of slide (for auto play, navigation), 1 hor, 2 vert, 5 hor rev, 6 vert rev,
+                $DragOrientation: 3,                      //[Optional] 0 no drag, 1 hor, 2 vert, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $SlideshowOptions: {                      //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,       //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,  //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                 //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                       //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $BulletNavigatorOptions: {                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                     //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                       //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                            //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                            //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                        //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 10,                        //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                       //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,        //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                     //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1                             //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 940));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $(window).bind("orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+        });
+    </script>
+    
+    <!-- Jssor Slider Begin -->
+<div id="slideshow">
+    <div id="slider1_container">
+    	<a href="" class="homelink">home</a><img class="milanologo" src="img/milanologo.png"/>
+
+        <!-- Loading Screen -->
+        <div id="loading" u="loading">
+            <div id="loading1"></div>
+            <div id="loading2"></div>
+        </div>
+        
+        <!-- Slides Container -->
+        <div id="slidesContainer" u="slides">
+            <div><img u="image" src="img/latte2.jpg" /></div>
+            <div><img u="image" src="img/capp2.jpg" /></div>
+            <div><img u="image" src="img/milano2.jpg" /></div>
+        </div>
+
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb05" style="position: absolute; top: 470px; right: 6px;">
+            <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+        </div>
+    </div><!--slider1 container end-->
+</div><!--slideshow end-->
+    <!-- Jssor Slider End -->
+    
+<div id="formContainer">
+	<span class="large">Join the Evolution!</span><span class="small"> Fill out the form and questions below to learn more about the NESCAFÉ® Milano 2.0
+Total Coffee solution. By clicking submit below, you are authorizing one of our sales representatives to call you to see if your operation
+qualifies, and we may send you future information via email on NESTLÉ PROFESSIONAL products and exciting offers.</span>
+
+	<form id="milanoForm" action="" onsubmit="return validateForm()" method="post">
+		<div id="topform">
+			<input type="text" onClick="this.select()" class="fstCol" id="firstName" placeholder="First name" required>
+			<input type="text" onClick="this.select()" class="secCol" id="lastName" placeholder="Last name" required>
+			<input type="text" onClick="this.select()" class="fstCol" id="title" placeholder="Title" required>
+			<input type="text" onClick="this.select()" class="secCol" id="establishment" placeholder="Establishment name" required>
+			<input type="text" onClick="this.select()" class="fstCol" id="phoneNumber" placeholder="Phone number" required>
+			<input type="text" onClick="this.select()" class="secCol" id="email" placeholder="Email address" required>
+			<input type="text" onClick="this.select()" class="fstCol" id="operationType" placeholder="Type of operation?" required>
+			<input type="text" onClick="this.select()" class="secCol" id="numOfCups" placeholder="Number of cups of coffee served per day?" required>
+    	</div>
+    
+    	<!--<div id="bottomform">
+			<div class="checkbox"><input type="checkbox" value="1" id="checkbox" name="optin" /><label for="checkbox"></label></div>
+    		<p class="optin">YES! I would like to receive future information from Nestlé Professional via email and postal mail.</p>
+    		<br><br>
+    		<p class="legal">Your privacy is important to NESTLÉ PROFESSIONAL BEVERAGES. We do not sell or rent your e-mail address or any other personally identifiable 
+    		information to third-party companies. NESTLÉ PROFESSIONAL and its parent company, NESTLÉ USA, may occasionally send you e-mails regarding product specials, 
+    		promotions, and information about our products. All trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland.</p>
+    	</div>-->
+    
+    	<div id="submit"><input type="submit" value="Submit"></div>
+	</form>
+</div><!--formContainer END-->
+<div id="footer">
+	<img src="img/logo.jpg" class="logo">
+    <div id="policy"><p><a href="https://www.nestleprofessional.com/united-states/en/SiteArticles/Pages/PrivacyPolicy.aspx" target="_blank">Privacy Policy</a> | <a href="https://www.nestleprofessional.com/united-states/en/SiteArticles/Pages/TermsAndConditions.aspx" target="_blank">Terms & Conditions</a><br> All trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland.</p></div>
+    <div id="addinfo"><p><span class="reallySmall">For additional information in the US and Canada, call</span><br><span class="num">1-800-288-8682</span></p></div>
+
+
+</div>
+
+<script src="js/formVal.js"></script>
+
+</body>
+</html>
